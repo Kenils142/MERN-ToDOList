@@ -6,7 +6,8 @@ require('dotenv').config();
 // Use Dabtase ToDoList
 const connectDB = async () => {
     try{
-        const conn = await mongoose.connect(process.env.MONGO_URI, {
+        const uri = process.env.MONGO_URI || 'mongodb://localhost:27017/ToDoList';
+        const conn = await mongoose.connect(uri, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
