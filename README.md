@@ -68,7 +68,7 @@ Now we have installed every thing we need. We can now easily run the application
     Server running on port 5000
     MongoDB Connected: localhost
     ```
-2. Once the server is started, create new instance of terminal and then run the client using the following command.
+2. Once the server is started, create new instance of terminal move to the client directory and then run the client using the following command.
     ```
     yarn start
     ```
